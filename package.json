@@ -1,0 +1,45 @@
+{
+  "name": "@inspectph/react-easy-router",
+  "version": "1.0.0",
+  "description": "A simple React router wrapper with protected routes, role-based access, and layout support for React apps.",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs --minify",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "router",
+    "react-router-dom",
+    "protected-route",
+    "role-based-routing",
+    "auth",
+    "layouts",
+    "routing",
+    "navigation",
+    "react-router-wrapper"
+  ],
+  "author": "Emmanuel Santiago (inspectph)",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.8.2"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@types/react-router-dom": "^5.3.3",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inspect07/inspectph-react-easy-router"
+  }
+}
